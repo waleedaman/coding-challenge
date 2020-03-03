@@ -4,7 +4,7 @@
   "description": "Coding challenge solution",
   "author": "Waleed Aman",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/waleedaman/coding-challenge",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
