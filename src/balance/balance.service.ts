@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, HttpException, Injectable } from '@nestjs/common';
 
 @Injectable()
 export class BalanceService {
@@ -8,7 +8,12 @@ export class BalanceService {
     let balance = {};
     for(let i=0;i<numPersons;i++){
       let person = persons[i];
-      let personContribution = contributions[person];
+      let personContribution:{};
+      if(person in contributions){
+        personContribution = contributions[person];
+      }else{
+        throw new BadRequestException();
+      }
       for(let contribution in personContribution){
         if(contribution in foodItems && typeof contribution != 'object'){
           foodItems[contribution]+=personContribution[contribution];
