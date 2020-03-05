@@ -8,3 +8,8 @@ The code is written in TS(nodejs). The code uses <a href="https://nestjs.com/" t
 <br>
 The api runs on port 3000. The API docs are at localhost:3000/api.
 </p>
+<br><br>
+Steps to run:
+<br>Clone the repository
+<br>In the cloned repository run:<code>npm install<code>
+<br>    Then run:<code>npm run start</code>
