@@ -11,5 +11,5 @@ The api runs on port 3000. The API docs are at localhost:3000/api.
 <br><br>
 Steps to run:
 <br>Clone the repository
-<br>In the cloned repository run:<code>npm install<code>
+<br>In the cloned repository run:<code>npm install</code>
 <br>    Then run:<code>npm run start</code>
